@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a,
+.header-links a {
+    font-size: 14px;
+}
+
+nav a.active {
+    border-bottom: 1px solid #222;
+    padding-bottom: 5px;
+}
+
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+
+.hero {
+    height: 650px;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .25);
+}
+
+.hero-text {
+    position: absolute;
+    z-index: 1;
+    left: 8%;
+    bottom: 70px;
+}
+
+.hero-text p,
+.intro>p:first-child {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.05;
+    margin: 15px 0 30px;
+}
+
+.hero h1 em {
+    font-family: Georgia, serif;
+}
+
+.intro {
+    padding: 100px 20px;
+}
+
+.intro h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.intro-text {
+    color: #666;
+}
+
+.featured {
+    padding-bottom: 100px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-weight: 400;
+}
+
+.product-card img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.product-card p {
+    color: #777;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.footer {
+    padding: 55px 35px;
+    background: #f4f2ee;
+    margin-top: 40px;
+}
+
+.footer b {
+    letter-spacing: 3px;
+}
+
+.footer p {
+    color: #666;
+    font-size: 13px;
+}
+

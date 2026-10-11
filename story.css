@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    color: #222;
+    font-family: Arial, sans-serif
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.site-header {
+    height: 70px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 35px;
+    border-bottom: 1px solid #eee
+}
+
+.logo {
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: bold
+}
+
+nav {
+    display: flex;
+    gap: 28px
+}
+
+nav a,
+.header-links a {
+    font-size: 14px
+}
+
+.header-links {
+    display: flex;
+    gap: 20px
+}
+
+.story-hero {
+    height: 500px;
+    position: relative;
+    color: white
+}
+
+.story-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.story-hero:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .28)
+}
+
+.story-hero>div {
+    position: absolute;
+    z-index: 1;
+    left: 10%;
+    bottom: 60px
+}
+
+.story-hero p,
+.story-text>p:first-child {
+    font-size: 12px;
+    letter-spacing: 2px
+}
+
+.story-hero h1 {
+    font-size: 55px;
+    font-weight: 400;
+    max-width: 600px
+}
+
+.story-text {
+    padding: 100px 0
+}
+
+.story-text h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px
+}
+
+.story-text>p:last-child {
+    max-width: 650px;
+    line-height: 1.8;
+    color: #666
+}
+
+.values {
+    padding-bottom: 100px
+}
+
+.values h3 {
+    font-weight: 400
+}
+
+.values h4 {
+    font-weight: 400
+}
+
+.values p {
+    color: #666;
+    line-height: 1.6
+}
+
+.footer {
+    padding: 55px 35px;
+    background: #f4f2ee
+}
+
+.footer b {
+    letter-spacing: 3px
+}
+
+.footer p {
+    color: #666;
+    font-size: 13px
+}

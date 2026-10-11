@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-header {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a,
+.header-links a {
+    font-size: 14px;
+}
+
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header-links .active {
+    border-bottom: 1px solid #222;
+    padding-bottom: 5px;
+}
+
+.cart-page {
+    padding-top: 65px;
+    padding-bottom: 30px;
+    min-height: 600px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.cart-page h1 {
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.cart-item {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+.cart-item img {
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 2px 0 10px;
+}
+
+.item-details p {
+    color: #666;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.item-details .item-note {
+    color: #888;
+    font-size: 13px;
+}
+
+.quantity {
+    margin-top: 18px;
+}
+
+.remove {
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.item-price {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.continue-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.summary {
+    background: #f5f3ef;
+    padding: 28px;
+}
+
+.summary h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.summary > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 0;
+    font-size: 14px;
+}
+
+.summary .total {
+    font-size: 17px;
+}
+
+.summary-note {
+    margin: 15px 0 0;
+    color: #777;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer {
+    padding: 55px 35px;
+    background: #f4f2ee;
+    margin-top: 50px;
+}
+
+.footer b {
+    letter-spacing: 3px;
+}
+
+.footer p {
+    color: #666;
+    font-size: 13px;
+}
