@@ -1,0 +1,305 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    background: #0d2347;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 97px;
+    padding: 19px;
+}
+
+nav {
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    gap: 30px;
+    color: white;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.second {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(166, 204, 239);
+    padding: 60px;
+}
+
+.left {
+    width: 45%;
+}
+
+.left h1 {
+    font-size: 50px;
+    color: #102c63;
+
+}
+
+.left h2 {
+
+    color: #1d62d0;
+    margin: 15px 0;
+
+}
+
+.left p {
+
+    font-size: 20px;
+    line-height: 35px;
+
+}
+
+.left button {
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: #12366f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.right img {
+
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 8px solid white;
+    object-fit: cover;
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px;
+    background-color: #8c8686
+}
+
+.box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+
+
+}
+
+.box h2 {
+
+    margin-bottom: 20px;
+
+    color: #0d3d85;
+
+}
+
+.box ul {
+
+    padding-left: 25px;
+
+    line-height: 35px;
+
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+
+    border: 1px solid gray;
+
+    padding: 10px;
+
+    text-align: center;
+
+}
+
+.projects {
+
+    padding: 50px;
+     background-color: #8c8686;
+
+}
+
+.projects h2 {
+
+    margin-bottom: 25px;
+
+    color: #12366f;
+
+}
+
+.cards {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+.card {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .15);
+
+    flex: 1;
+
+}
+
+.card h3 {
+
+    margin-bottom: 15px;
+
+}
+
+.card p {
+
+    margin-bottom: 15px;
+
+    line-height: 28px;
+
+}
+
+.card a {
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    color: #0d57b4;
+
+}
+
+.contact {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    padding: 50px;
+
+}
+
+.contact i {
+
+    margin-right: 20px;
+
+    margin-top: 20px;
+
+    color: #12366f;
+
+    cursor: pointer;
+
+}
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+input,
+textarea {
+
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    font-size: 16px;
+
+}
+
+form button {
+
+    width: 180px;
+
+    padding: 12px;
+
+    background: #12366f;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+footer {
+
+    background: #0d2347;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+
+}
+
+@media(max-width:900px) {
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .left {
+
+        width: 100%;
+
+    }
+
+    .container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cards {
+
+        flex-direction: column;
+
+    }
+
+    .contact {
+
+        grid-template-columns: 1fr;
+    }}
