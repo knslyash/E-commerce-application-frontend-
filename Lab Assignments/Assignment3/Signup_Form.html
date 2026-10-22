@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup Page</title>
+  <!-- Name: Yash Kumar | Section: NB | Lab Assignment-3 | Task 2 -->
+  <style>
+    .error { color: red; }
+  </style>
+</head>
+<body>
+  <h2>Signup Page</h2>
+
+  <form onsubmit="return validateForm()">
+    Name: <input type="text" id="name">
+    <span class="error" id="nameError"></span><br><br>
+
+    Email: <input type="text" id="email">
+    <span class="error" id="emailError"></span><br><br>
+
+    Password: <input type="password" id="password">
+    <span class="error" id="passwordError"></span><br><br>
+
+    Confirm Password: <input type="password" id="confirm">
+    <span class="error" id="confirmError"></span><br><br>
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <script>
+    function validateForm() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      var confirm = document.getElementById("confirm").value;
+      var valid = true;
+
+      // clear old error messages
+      document.getElementById("nameError").innerText = "";
+      document.getElementById("emailError").innerText = "";
+      document.getElementById("passwordError").innerText = "";
+      document.getElementById("confirmError").innerText = "";
+
+      if (name == "") {
+        document.getElementById("nameError").innerText = "Name is required";
+        valid = false;
+      }
+
+      if (email == "") {
+        document.getElementById("emailError").innerText = "Email is required";
+        valid = false;
+      } else if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+        document.getElementById("emailError").innerText = "Enter a valid email";
+        valid = false;
+      }
+
+      if (password.length < 6) {
+        document.getElementById("passwordError").innerText = "Password must be at least 6 characters";
+        valid = false;
+      }
+
+      if (confirm != password) {
+        document.getElementById("confirmError").innerText = "Passwords do not match";
+        valid = false;
+      }
+
+      if (valid) {
+        alert("Signup successful!");
+      }
+
+      // stop the page from reloading
+      return false;
+    }
+  </script>
+</body>
+</html>

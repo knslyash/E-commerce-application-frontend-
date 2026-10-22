@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+  <!-- Name: Yash Kumar | Section: NB | Lab Assignment-3 | Task 5 -->
+  <style>
+    .done { text-decoration: line-through; color: gray; }
+  </style>
+</head>
+<body>
+  <h2>Todo List</h2>
+
+  <input type="text" id="taskInput" placeholder="Enter a task">
+  <button onclick="addTask()">Add</button>
+
+  <ul id="taskList"></ul>
+
+  <script>
+    function addTask() {
+      var input = document.getElementById("taskInput");
+      var text = input.value;
+
+      if (text == "") {
+        alert("Please enter a task");
+        return;
+      }
+
+      // create a new list item
+      var li = document.createElement("li");
+
+      var span = document.createElement("span");
+      span.innerText = text + " ";
+
+      // button to mark task as completed
+      var doneBtn = document.createElement("button");
+      doneBtn.innerText = "Complete";
+      doneBtn.onclick = function () {
+        span.classList.toggle("done");
+      };
+
+      // button to delete task
+      var deleteBtn = document.createElement("button");
+      deleteBtn.innerText = "Delete";
+      deleteBtn.onclick = function () {
+        li.remove();
+      };
+
+      li.appendChild(span);
+      li.appendChild(doneBtn);
+      li.appendChild(deleteBtn);
+      document.getElementById("taskList").appendChild(li);
+
+      input.value = "";
+    }
+  </script>
+</body>
+</html>

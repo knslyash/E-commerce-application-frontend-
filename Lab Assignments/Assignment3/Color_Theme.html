@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Color Theme</title>
+  <!-- Name: Yash Kumar | Section: NB | Lab Assignment-3 | Task 3 -->
+</head>
+<body>
+  <h2>Change Color Theme</h2>
+  <p>Click a button to change the theme of this page.</p>
+
+  <button onclick="setTheme('white', 'black')">Light</button>
+  <button onclick="setTheme('black', 'white')">Dark</button>
+  <button onclick="setTheme('lightblue', 'darkblue')">Blue</button>
+  <button onclick="setTheme('lightgreen', 'darkgreen')">Green</button>
+
+  <script>
+    function setTheme(bgColor, textColor) {
+      document.body.style.backgroundColor = bgColor;
+      document.body.style.color = textColor;
+    }
+  </script>
+</body>
+</html>
